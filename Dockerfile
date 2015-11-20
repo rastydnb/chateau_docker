@@ -24,4 +24,6 @@ RUN curl https://deb.nodesource.com/iojs_1.x/pool/main/i/iojs/iojs_1.5.1-1nodeso
 
 ADD config.js /config.js
 RUN chmod +x /config.js
+EXPOSE 80
+
 CMD /bin/chateau -f /config.js
